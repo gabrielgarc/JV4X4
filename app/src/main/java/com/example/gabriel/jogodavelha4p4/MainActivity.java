@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             arrayButton[finalX].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    jogada(finalX);
+                    jogada(finalX); int a = 1; a = a +2;
                 }
             });
             matriz[x]="";
