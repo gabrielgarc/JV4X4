@@ -89,12 +89,9 @@ public class PvCActivity extends AppCompatActivity {
             }
         }
 
-        Integer jogadaRandom = disponiveis.get(new Random().nextInt(disponiveis.size() - 1));
-
-        jogada(jogadaRandom.intValue());
-
-        exibirButtons();
-        verificaFinalDoJogo();
+        int posArr = disponiveis.size() > 1 ? new Random().nextInt(disponiveis.size() - 1) : 0;
+        
+        jogada(disponiveis.get(posArr).intValue());
     }
 
     private void exibirButtons(){
